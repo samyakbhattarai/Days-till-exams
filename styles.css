@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #004d40; /* Dark teal text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Added padding for smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.container {
+    text-align: center;
+    max-width: 600px; /* Limit the width for larger screens */
+    width: 100%; /* Full width on smaller screens */
+}
+
+h1 {
+    color: #00796b; /* Teal color for the title */
+    font-size: 2.5em; /* Responsive font size */
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #00796b; /* Teal border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Margin for spacing */
+    width: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100px; /* Allow boxes to grow and shrink */
+    max-width: 120px; /* Max width for boxes */
+}
+
+.label {
+    font-size: 14px;
+    color: #555; /* Darker gray for labels */
+}
+
+.total-seconds {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #00796b; /* Teal color for total seconds */
+}
+
+.exam-days {
+    margin-top: 20px;
+}
+
+.exam-days h2 {
+    font-size: 24px;
+    color: #d32f2f; /* Red color for exam days text */
+}
+
+.exam-days p {
+    font-size: 16px; /* Responsive font size for the paragraph */
+}
+
+.exam-days a {
+    color: #00796b; /* Teal color for the link */
+    text-decoration: none;
+}
+
+.exam-days a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    .box {
+        width: 60px; /* Smaller box width for smaller screens */
+    }
+
+    .total-seconds {
+        font-size: 18px; /* Smaller font size for total seconds */
+    }
+
+    .exam-days h2 {
+        font-size: 20px; /* Smaller font size for exam days */
+    }
+
+    .exam-days p {
+        font-size: 14px; /* Smaller font size for the paragraph */
+    }
+}
