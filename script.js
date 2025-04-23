@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const examDate = new Date('2025-05-04T08:00:00');
+    const examDate = new Date('2025-05-04T08:00:00'); #update
     const now = new Date();
     const totalSecondsLeft = Math.floor((examDate - now) / 1000);
 
