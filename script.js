@@ -18,7 +18,7 @@ function updateCountdown() {
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
-
+    document.getElementById('total-seconds').textContent = totalSecondsLeft;
     setTimeout(updateCountdown, 1000);
 }
 
