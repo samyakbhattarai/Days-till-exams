@@ -1,5 +1,6 @@
+// script.js
 function updateCountdown() {
-    const examDate = new Date('2025-05-04T08:00:00'); #update
+    const examDate = new Date('2025-05-04T08:00:00');
     const now = new Date();
     const totalSecondsLeft = Math.floor((examDate - now) / 1000);
 
@@ -17,7 +18,6 @@ function updateCountdown() {
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
-    document.getElementById('total-seconds').textContent = totalSecondsLeft;
 
     setTimeout(updateCountdown, 1000);
 }
